@@ -13,11 +13,13 @@ var observable = Observable.create(function (observer) {
 
 var observer = {}
 
+import './styles/index.scss'
+
 observable.subscribe((data) => {
     console.log(data)
 }, (error) => {
     console.error(error)
-}, (data) =>{
+}, (data) => {
     console.log(data);
     console.log('complete')
 })
